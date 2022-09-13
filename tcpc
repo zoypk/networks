@@ -40,3 +40,6 @@ printf("message from server:%s",buf1);
 }
 }
 }
+
+gcc -o tcpclient tcpc.c
+./tcpclient 127.0.0.1 2000
