@@ -40,3 +40,7 @@ bind(sockfd, (SA*) &servaddr,sizeof(servaddr));
 printf("\n binding successful....\n");
 dg_echo(sockfd, (SA*) &cliaddr,sizeof(cliaddr));
 }
+
+gcc -o udpserver udps.c
+
+./udpserver 2000
