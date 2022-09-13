@@ -40,3 +40,7 @@ sockfd=socket(AF_INET,SOCK_DGRAM,0);
 dg_cli(sockfd,(SA *) &servaddr,sizeof(servaddr));
 exit(0);
 }
+
+gcc -o udpclient udpc.c
+
+./udpclient 127.0.0.1 2000
