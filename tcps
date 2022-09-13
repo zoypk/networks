@@ -59,3 +59,5 @@ scanf("%s",buf3);
 write(sd,buf3,1000);
 printf("\nmessage send to client:",buf3);
 }
+gcc -o tcpserver tcps.c
+./tcpserver 2000
